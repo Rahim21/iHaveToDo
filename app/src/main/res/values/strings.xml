@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">iHaveToDo</string>
+    <string name="settings_title">Settings</string>
+    <string name="history_title">Alarm History</string>
+    <string name="recycler_title" translatable="false">Alarm List</string>
+    <string name="white" translatable="false">White</string>
+
+
+    <string name="shakeOp" translatable="false"> <b>Shake</b>  on/off to delete alarm history,</string>
+    <string-array name="shakeAndPowerOptions">
+        <item>Delete the alarm.</item>
+        <item>Do Nothing.</item>
+    </string-array>
+    <string name="settings_theme" translatable="false">Choose theme:</string>
+    <string-array name="themeOptions_noSystem">
+        <item>According to time</item>
+        <item>Light</item>
+        <item>Dark</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Red</item>
+        <item>Orange</item>
+    </string-array>
+    <string name="settings_shakeSensitivityMainLabel" translatable="false"><b>Shake sensitivity settings</b>\n<small>Test the sensitivity of the shake
+        detector, and change it as you wish</small></string>
+    <string name="shakeSensitivityChangeLabel" translatable="false"><small>Change sensitivity:</small></string>
+    <string name="leastSensitiveLabel" translatable="false">\u2191\nLeast\nsensitive</string>
+    <string name="mostSensitiveLabel" translatable="false">\u2191\nMost\nsensitive</string>
+    <string name="testShake" translatable="false"><small><b>Test shake sensitivity</b>\nTap to enable the shake detector so that you can
+        choose the sensitivity that correctly suits you.</small></string>
+    <!-- AlertDialog_TestShakeSensitivity -->
+    <string name="title_shakeDetectionTest" translatable="false">Test sensitivity of shake detector</string>
+    <string name="message_shakeDetectionTest" translatable="false">Shake your phone. A vibration will tell you that a shake event has
+    been detected. Change the sensitivity as per your choice.</string>
+    <string name="negative_shakeDetectionTest" translatable="false">Stop</string>
+    <string-array name="themeOptions_all">
+        <item>According to time</item>
+        <item>Light</item>
+        <item>Dark</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Set by system</item>
+    </string-array>
+
+    //Sorting
+    <string name="activity_main_vertical_linear_sample_button" translatable="false">Vertical Linear Sample</string>
+    <string name="activity_main_horizontal_linear_sample_button" translatable="false">Horizontal Linear Sample</string>
+    <string name="activity_main_grid_sample_button" translatable="false">Grid Layout Sample</string>
+    <string name="activity_main_header" translatable="false">Expanding RecyclerView</string>
+    <string name="coming_soon" translatable="false">Feature coming soon</string>
+
+    <!-- Linear sample -->
+    <string name="activity_vertical_linear_sample_title" translatable="false">Vertical Linear Sample</string>
+    <string name="activity_horizontal_linear_sample_title" translatable="false">Horizontal Linear Sample</string>
+    <string name="toolbar_sample_checkBox" translatable="false">Custom Expand Button</string>
+    <string name="child_text" translatable="false">Child %1$d</string>
+    <string name="second_child_text" translatable="false">Child %1$d_2</string>
+    <string name="third_child_text" translatable="false">Child %1$d_3</string>
+    <string name="child_insert_text" translatable="false">Child of inserted #%1$d</string>
+    <string name="parent_text" translatable="false">Parent %1$d</string>
+    <string name="inserted_parent_text" translatable="false">Inserted Parent</string>
+    <string name="arrow_contentDescription" translatable="false">Expand list item arrow</string>
+    <string name="item_expanded" translatable="false">Item %1$d expanded</string>
+    <string name="item_collapsed" translatable="false">Item %1$d collapsed</string>
+    <string name="expand_parent_two" translatable="false">Expand parent 2</string>
+    <string name="collapse_parent_two" translatable="false">Collapse parent 2</string>
+    <string name="expand_all" translatable="false">Expand all parents</string>
+    <string name="collapse_all" translatable="false">Collapse all parents</string>
+    <string name="add_item_to_end" translatable="false">Add parent to end</string>
+    <string name="remove_item_from_end" translatable="false">Remove parent from end</string>
+    <string name="add_item_at_pos_two" translatable="false">Add parent @ pos 1</string>
+    <string name="remove_second_pos" translatable="false">Remove parent @ pos 1</string>
+    <string name="add_child" translatable="false">Add child to end of 2nd parent</string>
+    <string name="remove_child" translatable="false">Remove child on 2nd parent from pos 1</string>
+    <string name="added_child" translatable="false">Child Addition %1$d</string>
+    <string name="add_multiple_parents" translatable="false">Add 2 Parents @ pos 1</string>
+    <string name="modify_last_parent" translatable="false">Modify last Parent</string>
+    <string name="modify_last_child" translatable="false">Modify last Child</string>
+    <string name="modified_parent_text" translatable="false">modified %1$d</string>
+    <string name="modified_child_text" translatable="false">modified Child %1$d</string>
+    <string name="expand_range" translatable="false">Expand parents 4–6</string>
+    <string name="collapse_range" translatable="false">Collapse parents 2–5</string>
+    <string name="add_two_children" translatable="false">Add two children to last parent</string>
+    <string name="remove_two_children" translatable="false">Remove two children from last parent</string>
+    <string name="modify_two_children" translatable="false">Modify two children from last parent</string>
+    <string name="remove_two_parents" translatable="false">Remove last two Parents</string>
+    <string name="modify_two_parents" translatable="false">Modify last two Parents</string>
+    <string name="parent_move" translatable="false">Move parent @ pos 1 to pos 3</string>
+    <string name="child_move" translatable="false">On Parent @ pos 1, move child from pos 0 to end</string>
+
+
+    <string name="collapsed" translatable="false">collapsed: %s</string>
+    <string name="expanded" translatable="false">expanded: %s</string>
+
+
+    <!-- Sample Toolbar -->
+    <string name="no_animation" translatable="false">No animation</string>
+    <string name="spinner_adapter_time_s" translatable="false">1 s</string>
+    <string name="spinner_adapter_time_ms" translatable="false">%1$d ms</string>
+    <string name="action_settings" translatable="false">History</string>
+    <string name="action_settings2" translatable="false">Delete</string>
+
+    <string name="navigation_drawer_open" translatable="false">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close Navigation Drawer</string>
+
+    <string name="app_import" translatable="false">Import</string>
+    <string name="app_gallery" translatable="false">Gallery</string>
+    <string name="app_slideshow" translatable="false">Slideshow</string>
+    <string name="app_tools" translatable="false">Settings</string>
+    <string name="app_communicate" translatable="false">Communicate</string>
+    <string name="app_share" translatable="false">Share</string>
+    <string name="app_send" translatable="false">Send</string>
+    <string name="appmenuname" translatable="false">Global Mall Online</string>
+
+    <string name="navdemo" translatable="false">Navigation Drawer Full Demo</string>
+    <string name="gallery" translatable="false">This is GALLERY Activity</string>
+    <string name="fileimport" translatable="false">This is FILE IMPORT Activity</string>
+    <string name="slideshow" translatable="false">This is SLIDE SHOW Activity</string>
+    <string name="edit" translatable="false">edit</string>
+    <string name="title_activity_main_ui" translatable="false">MainActivity_ui</string>
+    <!-- Strings : utilisé pour les fragments de la navigation -->
+    <string name="first_fragment_label" translatable="false">First Fragment</string>
+    <string name="second_fragment_label" translatable="false">Second Fragment</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="previous" translatable="false">Previous</string>
+
+    <string name="hello_first_fragment" translatable="false">Hello first fragment</string>
+    <string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
+    <string name="datee">DATE:</string>
+    <string name="timee">TIME:</string>
+    <string name="to_do">To Do:</string>
+    <string name="todo_deleted">Todo List -> Deleted</string>
+    <string name="to_do_added">To Do List -> Added</string>
+    <string name="todo_name">Today List</string>
+    <string name="todo_tomorow">For Tomorrow</string>
+    <string name="todo_upcoming">Up-Coming</string>
+
+
+</resources>

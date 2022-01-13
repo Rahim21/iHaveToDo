@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">iHaveToDo</string>
+    <string name="settings_title">Paramètres</string>
+    <string name="history_title">Historique</string>
+    <string name="datee">Date</string>
+    <string name="timee">Temps</string>
+    <string name="to_do">Liste des tâches à faire</string>
+    <string name="todo_deleted">"Tâche supprimée "</string>
+    <string name="to_do_added">Nouvelle tâche ajoutée</string>
+    <string name="todo_name">Tâche(s) à faire aujourd\'hui</string>
+    <string name="todo_tomorow">Pour demain</string>
+    <string name="todo_upcoming">A venir</string>
+</resources>

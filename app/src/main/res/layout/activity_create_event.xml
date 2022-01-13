@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".CreateEvent"
+
+    >
+   <!-- <include
+        android:id="@+id/toolbar1"
+        layout="@layout/toolbar"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_setting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/uperButtons"
+        android:layout_marginTop="12dp"
+
+        >
+
+        <ImageButton
+            android:id="@+id/recyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_recycle"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/time_constraints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uperButtons"
+        >
+
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="26dp"
+            android:text="Alarm Time: "
+            android:textSize="20dp"
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/showTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/timeText"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/time_buttons_constraints"
+        >
+
+     <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+       >
+
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
+                android:id="@+id/timegrouping"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:paddingHorizontal="10dp"
+                app:alignItems="center">
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btn_time"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                app:layout_flexShrink="0"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                app:toggle_text="Custom Time" />
+
+            </nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup>
+
+
+    </HorizontalScrollView>
+
+    </RelativeLayout>
+
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_time2"
+        android:text="Select Time"
+        android:visibility="gone"
+
+        android:textAllCaps="false"
+        android:background="@color/red"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="25dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/date_constraints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_buttons_constraints"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Date : "
+            android:textSize="20dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/showDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dateText"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_buttons_constraints"
+        app:layout_constraintTop_toBottomOf="@+id/time_buttons_constraints">
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"  >
+
+    <nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
+        android:id="@+id/timegrouping1"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:paddingHorizontal="10dp"
+        app:alignItems="center">
+
+                <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                    android:id="@+id/btn_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    app:layout_flexShrink="0"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginRight="2dp"
+                    android:text="Custom Date" />
+
+
+
+    </nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/title_constraints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tag">
+
+
+
+        <RelativeLayout
+            android:id="@+id/editview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+
+
+            <EditText
+                android:id="@+id/editext_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Enter Message "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.060000002" />
+
+        </RelativeLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+      >
+
+
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            android:background="@color/colorPrimary"
+            android:text="Add"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_speak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_toRightOf="@+id/btn_done"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="12dp"
+            android:text="Speak"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

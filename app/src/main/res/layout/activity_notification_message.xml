@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".NotificationMessage"
+    android:background="@color/colorClick">
+
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Ma ToDoList"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <RelativeLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9CBAD1"
+        android:layout_marginTop="10dp">
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:id="@+id/b1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:maxLines="1"
+            android:text="Calender"
+            android:textSize="18dp"
+            app:toggle_backgroundColor="#006400"
+            app:toggle_textColor="#FFFFFF" />
+
+
+
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:id="@+id/b2"
+            android:layout_width="wrap_content"
+            android:text="Done"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            app:toggle_backgroundColor="#1E3FF8"
+            app:toggle_textColor="#FFFFFF"
+            android:maxLines="1"
+            android:layout_marginRight="10dp"
+
+            />
+    </RelativeLayout>
+
+    <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:id="@+id/history"
+        app:toggle_backgroundColor="#648885"
+        app:toggle_textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        />
+</LinearLayout>

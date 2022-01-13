@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingTop="12dp">
+
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:maxLines="1"
+            android:text="Morning"
+            android:textColor="#070707"
+            android:textSize="18dp" />
+
+        <TextView
+
+            android:id="@+id/tvMorning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="60dp"
+            android:layout_toEndOf="@+id/tv1"
+            android:gravity="center"
+
+            android:maxLines="1"
+            android:text="time"
+            android:textColor="#070707"
+            android:textSize="18dp" />
+
+        <ImageButton
+            android:id="@+id/editext_morning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:maxLines="1"
+           android:src="@drawable/ic_watch"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl1"
+
+        >
+
+
+        <TextView
+
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:maxLines="1"
+            android:text="Evening"
+            android:textAlignment="center"
+            android:textColor="#070707"
+            android:textSize="18dp" />
+
+        <TextView
+
+            android:id="@+id/tvEvening"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="62dp"
+
+            android:layout_toEndOf="@+id/tv2"
+
+           android:layout_centerInParent="true"
+            android:maxLines="1"
+
+            android:textColor="#070707"
+            android:textSize="18dp" />
+
+        <ImageButton
+            android:id="@+id/editext_Evening"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="12dp"
+            android:maxLines="1"
+            android:src="@drawable/ic_watch"
+            android:textColor="#FFFFFF"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl2"
+
+        >
+
+
+        <TextView
+
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="Night"
+            android:textAlignment="center"
+            android:textColor="#070707"
+            android:textSize="18dp" />
+
+        <TextView
+
+            android:id="@+id/tvNight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="80dp"
+            android:layout_toRightOf="@+id/tv3"
+            android:layout_centerInParent="true"
+            android:text="time"
+            android:textColor="#070707"
+            android:textSize="18dp" />
+
+        <ImageButton
+            android:id="@+id/editext_Night"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:maxLines="1"
+            android:src="@drawable/ic_watch"
+            android:layout_marginEnd="12dp"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+</RelativeLayout>

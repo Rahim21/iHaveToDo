@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp">
+
+
+
+<LinearLayout
+    android:id="@+id/widgets"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    >
+    <ImageButton
+        android:id="@+id/button_add"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="refresh"
+        android:src="@drawable/ic_add_24"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSpeak"
+        android:src="@drawable/ic_speak_24"/>
+</LinearLayout>
+    <TextView
+        android:layout_below="@+id/widgets"
+        android:id="@+id/today_List"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:hint="Today List"/>
+</RelativeLayout>
